@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gentlerain AI – Clone</title>
 
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,40 +31,86 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero parallax">
         <h1>Gentle AI for Modern Teams</h1>
         <p>Build, scale, and improve with intelligent automation.</p>
         <button>Get Started</button>
     </section>
 
     <!-- FEATURES -->
-    <section id="features" class="section">
+    <section id="features" class="section bg-features" data-aos="fade-up">
         <h2>Features</h2>
         <p>Smart workflows, AI-powered insights, and seamless automation.</p>
     </section>
 
+    <div class="cards">
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">AI Automation</div>
+            <div class="card-back">Smart AI workflows</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Analytics</div>
+            <div class="card-back">Real-time insights</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">Security</div>
+            <div class="card-back">Enterprise grade safety</div>
+        </div>
+    </div>
+    </div>
+
+
     <!-- PRODUCT -->
-    <section id="product" class="section">
+    <section id="product" class="section bg-product" data-aos="fade-right">
         <h2>Product</h2>
         <p>Designed to help teams work faster and smarter.</p>
     </section>
 
+    <section class="horizontal">
+    <div class="horizontal-track">
+        <div class="panel panel-practice">
+            <h2>Practice</h2>
+        </div>
+        <div class="panel panel-upskill">
+            <h2>Upskill</h2>
+        </div>
+        <div class="panel panel-play">
+            <h2>Play</h2>
+        </div>
+        <div class="panel panel-improve">
+            <h2>Improve</h2>
+        </div>
+    </div>
+</section>
+
     <!-- BUSINESS -->
-    <section id="business" class="section">
+    <section id="business" class="section bg-business" data-aos="fade-left">
         <h2>Business</h2>
         <p>Solutions built for startups and enterprises.</p>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-contact" data-aos="zoom-in">
         <h2>Contact</h2>
-        <p>Get in touch with our team for support or inquiries.</p>
+        <p>Get in touch with team for support or inquiries.</p>
     </section>
+
+    <section class="section bg-improve">
 
     <!-- FOOTER -->
     <footer id="footer">
         <p>© 2026 Gentlerain AI Clone. Educational purpose only.</p>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <!-- JS -->
     <script src="script.js"></script>
