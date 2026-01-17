@@ -1,4 +1,5 @@
 # Gentlerain AI – Frontend Clone
+https://gentlerainai-clone.netlify.app/
 
 This project is a frontend clone inspired by https://gentlerain.ai  
 Created as part of a Web Development assignment.
