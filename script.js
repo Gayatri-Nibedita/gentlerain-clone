@@ -15,3 +15,7 @@ gsap.to(".horizontal-track", {
         end: "+=2000"
     }
 });
+
+ScrollTrigger.config({
+    ignoreMobileResize: true
+});
