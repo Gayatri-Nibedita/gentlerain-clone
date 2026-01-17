@@ -93,7 +93,7 @@ footer {
 }
 
 .parallax {
-    background-image: url("https://images.unsplash.com/photo-1527430253228-e93688616381");
+    background-image:url(assets/images/hero_bg.jpg) ;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -187,31 +187,31 @@ footer {
 /* Practice */
 .panel-practice {
     background-image:
-        url("https://images.unsplash.com/photo-1633356122544-f134324a6cee");
+        url(assets/images/practice.png);
 }
 
 /* Upskill */
 .panel-upskill {
     background-image:
-        url("https://images.unsplash.com/photo-1620712943543-bcc4688e7485");
+        url(assets/images/upskill.webp);
 }
 
 /* Play */
 .panel-play {
     background-image:
-        url("https://images.unsplash.com/photo-1614854262318-831574f15f1f");
+        url(assets/images/play.webp);
 }
 
 /* Improve */
 .panel-improve {
     background-image:
-        url("https://images.unsplash.com/photo-1629904853716-f0bc54eea481");
+        url(assets/images/improve.avif);
 }
 
 .bg-features {
     background: 
         linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-        url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b");
+        url("https://4ce941a0.delivery.rocketcdn.me/wp-content/uploads/AI-Revolutionizing-Web-Design-A-Comprehensive-Overview.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -293,5 +293,62 @@ footer {
     }
 }
 
+.watery-text {
+    position: relative;
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    overflow: hidden;
+}
+
+/* flowing water shine */
+.watery-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0.1) 25%,
+        rgba(255,255,255,0.35) 37%,
+        rgba(255,255,255,0.1) 50%
+    );
+    animation: waterFlow 4s linear infinite;
+    pointer-events: none;
+}
+
+/* ripple pulse */
+.watery-text::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at 30% 50%,
+        rgba(255,255,255,0.25),
+        transparent 60%
+    );
+    animation: ripple 6s ease-in-out infinite;
+    opacity: 0.35;
+}
+
+@keyframes waterFlow {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes ripple {
+    0%   { transform: scale(1); opacity: 0.3; }
+    50%  { transform: scale(1.06); opacity: 0.45; }
+    100% { transform: scale(1); opacity: 0.3; }
+}
+
+/* mobile friendly */
+@media (max-width: 768px) {
+    .watery-text {
+        font-size: 32px;
+    }
+}
 
 
